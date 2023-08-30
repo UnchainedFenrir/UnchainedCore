@@ -21,24 +21,3 @@ To incorporate UnchainedCore into your FiveM server, follow these steps:
 1. **Clone the Repository**: Clone this repository to your server's resources directory.
 
 2. **Configuration**: Customize the framework's configuration files according to your server's needs. Modify the `shared/config.lua`, `client/config.lua`, and `server/config.lua` files to set up your RP rules, environment settings, and more.
-
-3. **Resource Manifest**: In your resource's `fxmanifest.lua` file, specify the dependencies and include UnchainedCore in your resource stack:
-
-```lua
-fx_version 'cerulean'
-game 'gta5'
-
--- Define your resource
-name 'your-resource-name'
-description 'Your resource description'
-author 'Your name'
-
--- Define dependencies
-dependencies {
-    'unchainedcore' -- Add UnchainedCore as a dependency
-}
-
--- Specify the entry files
-client_script 'client/main.lua'
-server_script 'server/main.lua'
-shared_script 'shared/config.lua'
